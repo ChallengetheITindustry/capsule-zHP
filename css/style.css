@@ -17,7 +17,12 @@ body {
 
 /* 背景画像 */
 
-.background-image {
+
+/* .background-image {
+    animation: sepia 8s;
+} */
+
+.body-background-image {
     animation: sepia 8s;
 }
 
@@ -25,6 +30,7 @@ body {
 /* 城をふわふわと動かす */
 
 .castle {
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -35,13 +41,14 @@ body {
 }
 
 .castle-still {
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     margin: auto;
     z-index: 0;
-    transform: scale(0.3)
+    transform: scale(0.5)
 }
 
 
@@ -49,13 +56,16 @@ body {
 
 @keyframes castle-size-change {
     0% {
-        transform: scale(0.3)
+        transform: scale(0.5);
+        width: 100%;
     }
     50% {
-        transform: scale(0.3)
+        transform: scale(0.5);
+        width: 100%;
     }
     100% {
-        transform: scale(1)
+        transform: scale(1);
+        width: 100%;
     }
 }
 
@@ -67,7 +77,7 @@ body {
         margin-left: 0px;
     }
     100% {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 }
 
@@ -79,7 +89,7 @@ body {
         margin-top: 0px;
     }
     100% {
-        margin-top: 5px;
+        margin-top: 20px;
     }
 }
 

@@ -9,7 +9,7 @@
     window.addEventListener('click', () => {
         castleId.classList.add('castle');
         castleId.classList.remove('castle-still');
-        backgroundImageId.classList.add('background-image');
+        body.classList.add('body-background-image');
         body.classList.remove('body-color');
     })
 }
