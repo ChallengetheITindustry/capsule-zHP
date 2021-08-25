@@ -15,12 +15,7 @@ body {
 }
 
 
-/* 背景画像 */
-
-
-/* .background-image {
-    animation: sepia 8s;
-} */
+/* クリック後のセピアが晴れていく挙動 */
 
 .body-background-image {
     animation: sepia 8s;
@@ -39,6 +34,9 @@ body {
     z-index: 0;
     animation: sepia 8s, castle-size-change 16s, wobbling_x 0.8s ease-in-out infinite alternate, wobbling_y 1.1s ease-in-out infinite alternate;
 }
+
+
+/* クリックする前の城 */
 
 .castle-still {
     width: 100%;
