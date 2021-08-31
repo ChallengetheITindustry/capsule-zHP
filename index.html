@@ -13,13 +13,31 @@
 
 <body class="body-color">
 
+    <!-- モーダル -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">放送部</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../会社HP/images/houso.jpg" style="width: 100%;">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section>
-        <!-- <div style="width: 100%; height: 100%; opacity: 0.5; background-color: red; z-index: 100; position: absolute; top: 0;"></div> -->
+        <button type="button" class="btn bg-transparent roomBtn" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
 
-        <!-- <img src="../会社HP/images/cloud_black_double.png"> -->
-        <img src="../会社HP/images/背景画像2.png" class="" id="background-image-id" style="width: 100%;  height: 100vh;">
+
+
+        <img src="../会社HP/images/bg.png" class="bg" id="background-image-id">
         <img class='castle-still' src="images/空想株式会社.png" id="castle-id">
-
     </section>
     <script src="js/script.js"></script>
 </body>

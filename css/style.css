@@ -1,6 +1,12 @@
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
 }
 
 
@@ -14,40 +20,64 @@ body {
     filter: sepia(100%);
 }
 
+.roomBtn {
+    width: 25%;
+    height: 12%;
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    z-index: 3;
+    outline: none;
+}
 
-/* クリック後のセピアが晴れていく挙動 */
+
+/* クリック後にbodyに対してセピアカラーが晴れていくアニメーションを付ける */
 
 .body-background-image {
-    animation: sepia 8s;
+    animation: sepia 2s;
 }
 
 
 /* 城をふわふわと動かす */
 
 .castle {
-    width: 100%;
+    width: 150%;
     position: absolute;
-    top: 0;
-    left: 0;
+    left: -25%;
     right: 0;
     margin: auto;
-    z-index: 0;
-    animation: sepia 8s, castle-size-change 16s, wobbling_x 0.8s ease-in-out infinite alternate, wobbling_y 1.1s ease-in-out infinite alternate;
+    z-index: 2;
+    animation: sepia 2s, castle-size-change 4s, wobbling_x 0.8s ease-in-out infinite alternate, wobbling_y 1.1s ease-in-out infinite alternate;
 }
 
 
-/* クリックする前の城 */
+/* 背景画像のサイズ */
+
+.bg {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* クリックする前の城（クリック時に本クラスは削除） */
 
 .castle-still {
-    width: 100%;
+    width: 150%;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -20%;
+    left: -25%;
     right: 0;
     margin: auto;
-    z-index: 0;
-    transform: scale(0.5)
+    z-index: 2;
+    transform: scale(0.5);
+    transform-origin: center;
 }
+
+
+/* 【アニメーションを指定】 */
+
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 
 /* 城のサイズを変更するアニメーション */
@@ -55,15 +85,15 @@ body {
 @keyframes castle-size-change {
     0% {
         transform: scale(0.5);
-        width: 100%;
+        top: -20%;
     }
     50% {
         transform: scale(0.5);
-        width: 100%;
+        top: -20%;
     }
     100% {
         transform: scale(1);
-        width: 100%;
+        top: 0;
     }
 }
 
@@ -110,3 +140,6 @@ body {
         filter: sepia(0%);
     }
 }
+
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
