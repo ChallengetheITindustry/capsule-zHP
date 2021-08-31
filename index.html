@@ -13,8 +13,8 @@
 
 <body class="body-color">
 
-    <!-- モーダル -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- 放送部モーダル -->
+    <div class="modal fade" id="housoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -31,9 +31,66 @@
         </div>
     </div>
 
+    <!-- 発明部モーダル -->
+    <div class="modal fade" id="hatsumeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">発明部</h5>
+                </div>
+                <div class="modal-body">
+                    <img src="../会社HP/images/hatsume.jpg" style="width: 100%;"><br>
+                    <p>発明部のモーダルです</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 美術部モーダル -->
+    <div class="modal fade" id="bizyutsuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">美術部</h5>
+                </div>
+                <div class="modal-body">
+                    <img src="../会社HP/images/bizyutsu.jpg" style="width: 100%;"><br>
+                    <p>美術部のモーダルです</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 美術部モーダル -->
+    <div class="modal fade" id="kikaiModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">機械部</h5>
+                </div>
+                <div class="modal-body">
+                    <img src="../会社HP/images/kikai.jpg" style="width: 100%;"><br>
+                    <p>機械部のモーダルです</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- 全体 -->
     <section>
-        <div type="button" class="btn bg-transparent roomBtn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="outline: none; box-shadow: none;"></div>
+        <div id="houso" type="button" class="btn bg-transparent roomHouso" data-bs-toggle="modal" data-bs-target="#housoModal" style="outline: none; box-shadow: none;"></div>
+        <div id="hatsume" type="button" class="btn bg-transparent roomHatsume" data-bs-toggle="modal" data-bs-target="#hatsumeModal" style="outline: none; box-shadow: none;"></div>
+        <div id="bizyutsu" type="button" class="btn bg-transparent roomBizyutsu" data-bs-toggle="modal" data-bs-target="#bizyutsuModal" style="outline: none; box-shadow: none;"></div>
+        <div id="kikai" type="button" class="btn bg-transparent roomKikai" data-bs-toggle="modal" data-bs-target="#kikaiModal" style="outline: none; box-shadow: none;"></div>
 
 
 

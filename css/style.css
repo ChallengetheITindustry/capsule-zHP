@@ -20,11 +20,38 @@ section {
     filter: sepia(100%);
 }
 
-.roomBtn {
+.roomHouso {
     width: 25%;
     height: 12%;
     position: absolute;
-    top: 30%;
+    top: 25%;
+    left: 33%;
+    z-index: 3;
+}
+
+.roomHatsume {
+    width: 25%;
+    height: 12%;
+    position: absolute;
+    top: 38%;
+    left: 33%;
+    z-index: 3;
+}
+
+.roomBizyutsu {
+    width: 25%;
+    height: 12%;
+    position: absolute;
+    top: 52%;
+    left: 33%;
+    z-index: 3;
+}
+
+.roomKikai {
+    width: 25%;
+    height: 12%;
+    position: absolute;
+    top: 67%;
     left: 33%;
     z-index: 3;
 }
