@@ -20,6 +20,9 @@ section {
     filter: sepia(100%);
 }
 
+
+/* 放送部のボタン */
+
 .roomHouso {
     width: 25%;
     height: 12%;
@@ -28,6 +31,9 @@ section {
     left: 33%;
     z-index: 3;
 }
+
+
+/* 発明部のボタン */
 
 .roomHatsume {
     width: 25%;
@@ -38,6 +44,9 @@ section {
     z-index: 3;
 }
 
+
+/* 美術部のボタン */
+
 .roomBizyutsu {
     width: 25%;
     height: 12%;
@@ -46,6 +55,9 @@ section {
     left: 33%;
     z-index: 3;
 }
+
+
+/* 機械部のボタン */
 
 .roomKikai {
     width: 25%;
@@ -97,6 +109,18 @@ section {
     z-index: 2;
     transform: scale(0.5);
     transform-origin: center;
+}
+
+.cloud_black1 {
+    animation: move_cloud 1s;
+}
+
+.cloud_black_still {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    z-index: 10;
 }
 
 
@@ -164,6 +188,18 @@ section {
         -o-filter: sepia(0%);
         -ms-filter: sepia(0%);
         filter: sepia(0%);
+    }
+}
+
+
+/* 雲が晴れるアニメーション */
+
+@keyframes move_cloud {
+    from {
+        left: -10%;
+    }
+    to {
+        left: -100%;
     }
 }
 
