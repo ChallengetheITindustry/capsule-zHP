@@ -6,6 +6,7 @@
     const backgroundImageId = document.getElementById('background-image-id');
     const body = document.querySelector('body');
     const cloudWhite1 = document.getElementById('cloud-white1')
+    const btnRoom = document.getElementsByClassName('btnRoom')
 
     window.addEventListener('click', () => {
         castleId.classList.add('castle');
@@ -14,6 +15,6 @@
         body.classList.remove('body-color');
         cloudWhite1.classList.remove('cloud-white1-still');
         cloudWhite1.classList.add('cloud-white1');
-
+        btnRoom.classList.remove('btnRoom');
     })
 }

@@ -57,6 +57,11 @@ section {
 }
 
 
+/* .btnRoom {
+    display: none;
+} */
+
+
 /* クリック後にbodyに対してセピアカラーが晴れていくアニメーションを付ける */
 
 .body-background-image {
