@@ -10,7 +10,7 @@
     const backgroundImageId = document.getElementById('background-image-id');
     const body = document.querySelector('body');
     const cloudBlackStill = document.getElementById('cloud_black_still');
-    const gakubuchi = doucment.getElementById('gakubuchi');
+    const gakubuchi = document.getElementById('gakubuchi');
 
     window.addEventListener('click', () => {
 
@@ -25,10 +25,13 @@
         console.log('クラスの追加と削除を行いました');
         cloudBlackStill.classList.add('cloud_black1');
         gakubuchi.classList.add('gakubuchi-remove');
+
         setTimeout(function() {
+            gakubuchi.style.display = 'none';
             cloudBlackStill.classList.remove('cloud_black_still');
             cloudBlackStill.style.display = 'none';
-            console.log('黒い雲を削除しました☁')
+            console.log('黒い雲を削除しました☁');
+            console.log('額縁を削除しました');
 
         }, 1000)
         setTimeout(transparentBtn, 4000);
