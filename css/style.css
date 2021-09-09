@@ -97,6 +97,13 @@ section {
 }
 
 
+/* 額縁を削除するアニメーション */
+
+.gakubuchi-remove {
+    animation: remove-gakubuchi 1s;
+}
+
+
 /* クリックする前の城（クリック時に本クラスは削除） */
 
 .castle-still {
@@ -111,9 +118,15 @@ section {
     transform-origin: center;
 }
 
+
+/* 黒い雲が履けるアニメーション */
+
 .cloud_black1 {
     animation: move_cloud 1s;
 }
+
+
+/* 黒い雲の最初の位置を指定s */
 
 .cloud_black_still {
     width: 100%;
@@ -144,6 +157,20 @@ section {
     100% {
         transform: scale(1);
         top: 0;
+    }
+}
+
+
+/* 額縁を削除するアニメーション */
+
+@keyframes remove-gakubuchi {
+    from {
+        opacity: 1;
+        display: block;
+    }
+    to {
+        opacity: 0;
+        display: none;
     }
 }
 

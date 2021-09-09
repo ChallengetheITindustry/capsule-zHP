@@ -10,19 +10,21 @@
     const backgroundImageId = document.getElementById('background-image-id');
     const body = document.querySelector('body');
     const cloudBlackStill = document.getElementById('cloud_black_still');
+    const gakubuchi = doucment.getElementById('gakubuchi');
 
     window.addEventListener('click', () => {
 
         if (clicked == true) {
-            console.log('すでにクリックしています💢')
+            console.log('すでにクリックしています')
             return;
         }
         castleId.classList.add('castle');
         castleId.classList.remove('castle-still');
         body.classList.add('body-background-image');
         body.classList.remove('body-color');
-        console.log('クラスの追加と削除を行いました🚀');
+        console.log('クラスの追加と削除を行いました');
         cloudBlackStill.classList.add('cloud_black1');
+        gakubuchi.classList.add('gakubuchi-remove');
         setTimeout(function() {
             cloudBlackStill.classList.remove('cloud_black_still');
             cloudBlackStill.style.display = 'none';
